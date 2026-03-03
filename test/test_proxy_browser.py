@@ -3,6 +3,8 @@
 """
 用 Playwright 浏览器测试代理
 访问 Google 并检查出口 IP，验证代理是否正常工作。
+Playwright 支持带账密的HTTP代理，但是不支持带账密的 SOCKS5 代理。
+如果使用 SOCKS5 代理，请确保代理服务器不需要认证
 """
 
 import asyncio
